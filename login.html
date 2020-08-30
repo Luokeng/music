@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style type="text/css">
+        @charset "utf-8";
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: url("./img/20508559_1367566594916.jpg") no-repeat;
+            background-size: 100% auto;
+        }
+        
+        #login-box {
+            width: 30%;
+            height: 150px;
+            margin: 0 450px;
+            margin-top: 15%;
+            text-align: center;
+            background: #00000060;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #login-box h1 {
+            color: white;
+            font-size: 25px;
+            /* margin-top: -50px; */
+        }
+        
+        .item1 {
+            padding: 10px 0;
+        }
+        
+        .item1 input,
+        .item2 input {
+            background: none;
+            border: 0;
+            border-bottom: 2px solid #fff;
+            font-size: 13px;
+            height: 26px;
+            outline: none;
+        }
+        
+        .item2 {
+            padding: 0 0 10px 0;
+        }
+        
+        .sub {
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-box">
+        <form method="GET" action="">
+            <h1>Login</h1>
+            <div class="item1">
+                <img src="./img/user.png" width="20px" height="20px">
+                <input type="text" name="username" placeholder="Username" autocomplete="off">
+            </div>
+            <div class="item2">
+                <img src="./img/password.png" width="25px" height="25px">
+                <input type="password" name="password" placeholder="Password" autocomplete="off">
+            </div>
+            <div class="sub">
+                <div id="submit" value="Login">Login</div>
+            </div>
+        </form>
+    </div>
+
+    <audio src="./音乐/矢野立美 - GUTSの仲間たち ＜M-20,M-42,M-22＞.mp3" autoplay></audio>
+    <script type="text/javascript">
+        var wav = document.getElementById("submit");
+
+        wav.onclick = function() {
+            alert("请认真输入用户名和密码噢，或者可以欣赏一下迪迦奥特曼🎵~");
+        };
+    </script>
+</body>
+
+</html>

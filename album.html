@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>MUSIC♪-商城</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 100%;
+        }
+        
+        #header {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid rgb(196, 192, 192);
+        }
+        
+        #logo {
+            display: flex;
+            text-align: center;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: indianred;
+            flex: 2;
+        }
+        
+        #search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #615d5d;
+            border-radius: 10px;
+            flex: 1;
+        }
+        
+        #search ::placeholder {
+            font-weight: 100;
+            font-size: 15px;
+        }
+        
+        #search input {
+            font-size: 17px;
+            width: 200px;
+            height: 25px;
+            margin-left: 10px;
+            outline: none;
+            border: none;
+        }
+        
+        #search i {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: none;
+            background: none;
+            border: none;
+        }
+        
+        #shopcar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        
+        #shopcar i {
+            font-size: 35px;
+        }
+        
+        #bodys {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #bodyscenten {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+        
+        .share i {
+            font-size: 18px;
+            color: rgb(82, 77, 77);
+        }
+        
+        .bodyscentenR {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bodyscentenR h4 {
+            color: rgb(160, 158, 158);
+        }
+        
+        #centen {
+            margin: 0 auto;
+            width: 80%;
+            height: 500px;
+            /* background-color: turquoise; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        #centenL {
+            display: flex;
+            margin: -180px 0 0 90px;
+            /* background-color: white; */
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        #lijizhichi {
+            background-color: #d33a31;
+        }
+        
+        #lijizhichi:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"><img src="./img/音乐 (3).png" alt="" width="40px" height="40px">MUSIC♪-音你而在-商城</div>
+        <div id="search">
+            <input type="text" placeholder="真无线耳机">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div id="shopcar"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+    </div>
+    <div id="bodys">
+        <div id="bodyscenten">
+            <div class="bodyscentenR">
+                <h3>首页</h3>
+                <span>&nbsp;&nbsp;></span>
+                <h4>&nbsp;&nbsp;folklore</h4>
+            </div>
+            <div class="share"><i class="fa fa-share-square-o" aria-hidden="true">&nbsp;分享</i></div>
+        </div>
+    </div>
+    <div id="centen">
+        <div id="centenR">
+            <img src="./img/Taylor Swift.jpg" alt="" style="width: 440px;">
+        </div>
+        <div id="centenL">
+            <div style="color: #333; font-size: 24px;margin-bottom: 20px;">folklore</div>
+            <div style="color: #0c73c2;font-size: 18px;margin-bottom: 20px;">Taylor Swift</div>
+            <div>
+                <span style="font-size: 30px;margin-right: 3px;color: #d33a31;margin-bottom: 20px;">￥</span><span style="font-size: 30px;margin-right: 3px;color: #d33a31;">25.00</span>
+            </div>
+            <div style="color: #999;margin-bottom: 20px;">已售出：325937张</div>
+            <div id="lijizhichi" style="margin-bottom: 20px; font-size: 18px; color: white; padding: 20px 50px;cursor: pointer;font-weight: 400;">立即支持</div>
+        </div>
+    </div>
+</body>
+
+</html>

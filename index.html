@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/音乐 (3).png" media="screen" />
+    <title>MUSIC♪</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <script src="./jq3.js"></script>
+    <style>
+        @charset "utf-8";
+        .LBT img {
+            position: absolute;
+            opacity: 0;
+            animation: sss 8s infinite;
+        }
+        
+        @keyframes sss {
+            0% {
+                opacity: 0;
+            }
+            2% {
+                opacity: 1;
+            }
+            24% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+        }
+        
+        img:nth-child(0) {
+            animation-delay: 0s;
+        }
+        
+        img:nth-child(1) {
+            animation-delay: 2s;
+        }
+        
+        img:nth-child(2) {
+            animation-delay: 4s;
+        }
+        
+        img:nth-child(3) {
+            animation-delay: 6s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"><img src="./img/音乐 (3).png" alt="">MUSIC♪-音你而在</div>
+        <div id="search">
+            <input type="text" placeholder="搜索音乐、MV、歌单、用户">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div id="topNavfr">
+            <ul>
+                <li><a target="_blank" href="./customerService.html">客服中心</a></li>
+                <li><a target="_blank" href="">招贤纳士</a></li>
+                <li><a target="_blank" href="">会员中心 </a></li>
+            </ul>
+        </div>
+        <div id="login">
+            <a target="_perent" href="./login.html"><input type="button" value="登录"></a>
+        </div>
+
+    </div>
+
+
+
+    <div class="navWrap">
+        <div id="nav">
+            <ul class="homeNav">
+                <li><a class="normal active" href="">首页</a></li>
+                <li><a class="normal" href="./MV.html" target="_perent">MV</a></li>
+                <li><a class="normal" id="productCenter" href="">我的音乐</a></li>
+                <li class="more" id="more"><a class="icon icon-nav6" id="showMore">更多 &nbsp; &nbsp;<i class="fa fa-angle-down " aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="secondMenu" id="secondMenu" style="width: 120px; display: none;background-color: #615d5d;padding: 0px 5px;">
+                <li><a href="">电台</a></li>
+                <li><a href="">MV</a></li>
+                <li><a href="">歌单</a></li>
+                <li><a href="">歌手</a></li>
+            </ul>
+            <ul class="subNav">
+                <li><a target="_blank" href=""><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;直播</a></li>
+                <li><a target="_blank" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;商城</a></li>
+                <li><a target="_blank" href=""><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;音乐人</a></li>
+                <li><a target="_blank" href=""><i class="fa fa-archive" aria-hidden="true"></i>&nbsp;代理商</a> </li>
+                <li><a target="_blank" href=""><i class="fa fa-microphone" aria-hidden="true"></i>&nbsp;主播电台</a></li>
+                <li><a target="_blank" href=""><i class="fa fa-window-restore" aria-hidden="true"></i>&nbsp;开放平台</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="backtop">
+        <div class="backg">
+            <div class="LBT">
+                <img src="./img/数字专辑.jpg" alt="">
+                <img src="./img/1封面.jpg" alt="">
+                <img src=".//img/3封面.jpg" alt="">
+                <img src="./img/4封面.jpg" alt="">
+            </div>
+            <div class="xiazai">
+                <div class="xiazaicenter1">
+                    <img src="./img/pc端.png" width="60px" height="60px">
+                    <a href="music.html"> 下载PC版</a>
+                </div>
+                <div class="xiazaicenter2">
+                    <img src="./img/mac (2).png" width="50px" height="50px">
+                    <a href="music.html"> 下载MAC版</a>
+                </div>
+                <div class="xiazaicenter3">
+                    <img src="./img/iphone.png" width="50px" height="50px">
+                    <a href="music.html">下载iPhone版</a>
+                </div>
+                <div class="xiazaicenter4">
+                    <img src="./img/android.png" width="50px" height="50px">
+                    <a href="music.html">下载Android版</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="local-top">
+        <h2><a href="#">热门歌曲</a></h2>
+        <li><a href="#">华 & 语</a></li>
+        <li><a href="#">流 & 行</a></li>
+        <li><a href="#">摇 & 滚</a></li>
+        <li><a href="#">民 & 谣</a></li>
+        <li><a href="#">电 & 子</a></li>
+        <li><a href="#"><u>更多☞☞☞</u></a></li>
+    </ul>
+
+    <div class="middle">
+        <div class="local-middle">
+            <div class="local-common">
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fmzjl.jpg"></a>
+                    </span>
+                    <span class="earphone">
+                        <a href="./音乐/周杰伦.mp3" target="_perent" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;💗点击播放：11447</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">有首歌叫<br><em>周杰伦</em></a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm12.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="./音乐/陈奕迅.mp3" target="_perent" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;💗点击播放： 10234</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">那个青春叫做<br><em>陈奕迅</em></a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm11.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="./音乐/薛之谦 - 一半.mp3" target="_perent" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;💗点击播放： 9234</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">可能也叫<br><em>薛之谦</em></a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm10.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="./音乐/邓紫棋.mp3" target="_perent" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp; 💗点击播放： 9135</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">还有棒棒<br><em>邓紫棋</em></a>
+                    </span>
+                </div>
+            </div>
+            <div class="local-common">
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm5.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp; 🎧8234</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">舒缓女声 | 卸下<br>疲惫的温柔良方</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm6.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp; 🎧7234</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">山海有你<br>不惧千里</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm7.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp; 🎧5234</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">【电台+演讲】是追逐<br>寻觅梦想的地方</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm8.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;🎧 4232</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">融合碰撞丨国产独<br>立音乐邂逅电子"</a>
+                    </span>
+                </div>
+            </div>
+            <div class="local-common">
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm4.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;🎧 3979</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> JFF12 | 5分钟纵览<br>现代电音发展史</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm9.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;🎧 2345</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">生活是自己的<br>尽情享受|尽情可爱</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/fm3.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;🎧 2034</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">生活是一种飞行<br>四季是爱的衬景</a>
+                    </span>
+                </div>
+                <div class="common-items">
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐"> <img src="./img/封面2.jpg"></a>
+                    </span>
+                    <span>
+                        <a href="#" title="播放"> <i class="fa fa-play-circle" aria-hidden="true"></i><strong>&nbsp;
+                                &nbsp;🎧 1745</strong></a>
+                    </span>
+                    <span>
+                        <a href="#" title="[华语速爆新歌] 最新华语音乐推荐">[华语速爆新歌] <br>最新华语音乐推荐</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="youbian">
+            <div class="youbian-top">
+                <div>
+                    <h3>入驻歌手</h3>
+                </div>
+                <div>
+                    <a href="#"><span>查看全部></span></a>
+                </div>
+            </div>
+            <div class="youbianconten">
+                <div class="imgs">
+                    <a href="#"><img src="./img/youbian1.jpg"></a>
+                </div>
+                <div class="jieshao">
+                    <span><a href="#">
+                            <h4>熊俊友<br>
+                                <h5>广州歌神熊俊友</h5>
+                            </h4>
+                        </a></span>
+                </div>
+            </div>
+            <div class="youbianconten">
+                <div class="imgs">
+                    <a href="#"><img src="./img/ruzhu2.jpg"></a>
+                </div>
+                <div class="jieshao">
+                    <span><a href="#">
+                            <h4>Fine乐团<br>
+                                <h5>独立音乐人</h5>
+                            </h4>
+                        </a></span>
+                </div>
+            </div>
+            <div class="youbianconten">
+                <div class="imgs">
+                    <a href="#"><img src="./img/ruzhu3.jpg"></a>
+                </div>
+                <div class="jieshao">
+                    <span><a href="#">
+                            <h4>萬暁利<br>
+                                <h5>民谣歌手、中国现代</h5>
+                            </h4>
+                        </a></span>
+                </div>
+            </div>
+            <div class="youbianconten">
+                <div class="imgs">
+                    <a href="#"><img src="./img/ruzhu4.jpg"></a>
+                </div>
+                <div class="jieshao">
+                    <span><a href="#">
+                            <h4>蔡健雅<br>
+                                <h5>音乐制作人</h5>
+                            </h4>
+                        </a></span>
+                </div>
+            </div>
+            <div class="youbianconten">
+                <div class="imgs">
+                    <a href="#"><img src="./img/ruhzu5.jpg"></a>
+                </div>
+                <div class="jieshao">
+                    <span><a href="#">
+                            <h4>毛不易<br>
+                                <h5>音乐年度之星</h5>
+                            </h4>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="fengge"></div>
+    <div class="tuijian">
+        <div class="tuijianjian">
+            <img src="./img/每日三十首.png" width="70px">
+            <span>每日三十首</span>
+        </div>
+        <div class="tuijianjian">
+            <img src="./img/猜你喜欢.png" width="70px">
+            <span>猜你喜欢</span>
+        </div>
+        <div class="tuijianjian">
+            <img src="./img/听见不同.png" width="70px">
+            <span>听见不同</span>
+        </div>
+        <div class="tuijianjian">
+            <img src="./img/私人电台.png" width="70px">
+            <span>私人电台</span>
+        </div>
+    </div>
+    <div class="bang">
+        <div class="bangcenten">
+            <img class="tu1" src="./img/古装戏.gif" width="200px" height="200px">
+            <span>明清旧梦<br>人生如戏唱，还有谁登场</span>
+            <div class="xiaozi">1. 世家/ 赵季平<br><br>2. 香遇/ 马久越<br><br>3. 飞鸟各投林/ 林雨申<br><br>4. 红楼白梦/ ZING</div>
+            <span class="play"><img src="./img/播放 (1).png" width="40px" height="40px"></span>
+        </div>
+        <div class="bangcenten">
+            <img class="tu1" src="./img/模特.gif" width="200px" height="200px">
+            <span>欧美乐坛黄金年代流行金曲大赏</span>
+            <div class="xiaozi">1. Wake Up/ Mayari Project<br><br>2. Mission/ Zazou<br><br>3. Chasin' After You/ O-Town
+                <br><br>4. Feel It Still/ Portugal. The Man</div>
+            <span class="play"><img src="./img/播放 (1).png" width="40px" height="40px"></span>
+        </div>
+        <div class="bangcenten">
+            <img class="tu1" src="./img/清新.gif" width="200px" height="200px">
+            <span>现在是几点？嗯，开心一点</span>
+            <div class="xiaozi">1. からかひ/ Sweet William<br><br>2. Allora/ Erick Lobo<br><br>3. is this a goodbye./ 別野加奈
+                <br><br>4. Maybe/ Xeuphoria </div>
+            <span class="play"><img src="./img/播放 (1).png" width="40px" height="40px"></span>
+        </div>
+        <div class="bangcenten">
+            <img class="tu1" src="./img/龙猫.gif" width="200px" height="200px">
+            <span>宅家又如何？放首节奏运动起来</span>
+            <div class="xiaozi">1. 春天/ 李晋<br><br>2. 一天/ 黄宣<br><br>3. 우리 둘 사이로/ 宋枝恩<br><br>4. 🌻花店不开，花继续开/ LK</div>
+            <span class="play"><img src="./img/播放 (1).png" width="40px" height="40px"></span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footertop1">
+                <div class="info">
+                    <div class="t1">关于MUSIC</div>
+                    <div><a href="#">关于我们</a></div>
+                    <div><a href="#">MUSIC招聘</a></div>
+                    <div><a href="#">联系我们</a></div>
+                    <div><a href="#">隐私权政策</a></div>
+                    <div><a href="#">联系客服</a></div>
+                    <div><a href="#">意见反馈</a></div>
+                    <div><a href="#">回旧版</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">入驻MUSIC</div>
+                    <div><a href="#">音乐人</a></div>
+                    <div><a href="#">音乐专栏</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">资料补全&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div><a href="#">添加资料</a></div>
+                    <div><a href="#">大家想要的专辑</a></div>
+                    <div><a href="#">音频上传</a></div>
+                    <div><a href="#">MV上传</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">桌面端&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div><a href="#">PC电脑</a></div>
+                    <div><a href="#">苹果电脑</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">合作伙伴&nbsp;&nbsp;&nbsp;</div>
+                    <div>
+                        <a href="#"><img src="./img/腾讯.png" width="20px" height="20px">腾讯</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/微软 (1).png" width="20px" height="20px">微软</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/阿里巴巴.png" width="55px" height="25px">&nbsp;阿里巴巴</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/京东.png" width="20px" height="20px">京东</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/苹果.png" width="20px" height="20px">&nbsp;Apple</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/亚马逊.png" width="40px" height="20px">&nbsp;亚马逊</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footertop2">
+                <div class="info2">
+                    <div class="t2">关注我们</div>
+                    <div>
+                        <a href="#"><img src="./img/微博.png" width="45px" height="45px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/微信.png" width="30px" height="30px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/知乎.png" width="30px" height="30px"></a>
+                    </div>
+                </div>
+                <div class="info3">
+                    <div class="t3">MUSIC音乐App</div>
+                    <div><img src="./img/扫码.png" width="140px" height="140px"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <div class="bottom1">
+                <div class="bottom11">
+                    <a href="#">淘宝网</a> |
+                    <a href="#">天猫</a> |
+                    <a href="#">支付宝</a> |
+                    <a href="#">飞猪</a> |
+                    <a href="#">聚划算</a> |
+                    <a href="#">阿里云</a> |
+                    <a href="#">阿里妈妈</a> |
+                    <a href="#">淘宝网</a> |
+                    <a href="#">1688</a> |
+                    <a href="#">Alios</a> |
+                    <a href="#">阿里通信</a> |
+                    <a href="#">万网</a> |
+                    <a href="#">UC</a> |
+                    <a href="#">阿里游戏</a> |
+                    <a href="#">大麦网</a> |
+                    <a href="#">一淘</a> |
+                    <a href="#">狂野飙车</a> |
+                    <a href="#">Uccrict</a> |
+                    <a href="#">阿里安全</a>
+                </div>
+            </div>
+            <div class="bottom2">
+                <div>© 2007 - 2020 杭州阿里巴巴音乐科技有限公司 版权所有 阿里巴巴旗下公司</div>
+            </div>
+            <div class="bottom3">
+                <div>营业执照 | 网络文化经营许可证 : 浙网文(2019)4999-453号 | 增值电信业务经营许可证 : 浙B2-20110188 | 浙ICP备18050417号-2 | 浙公网安备 33011002012729号</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

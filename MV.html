@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 100%;
+            background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+        }
+        
+        #header {
+            width: 100%;
+            min-width: 1250px;
+            height: 70px;
+            background-color: black;
+        }
+        
+        .link a {
+            text-decoration: none;
+            color: rgb(181, 134, 134);
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        .navlink a.active,
+        .navlink a:hover {
+            font-size: 22px;
+            color: tomato;
+            font-weight: 100;
+            background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+            border-radius: 10px;
+            background-size: 800%;
+            animation: jianbian 1s infinite;
+        }
+        
+        .Login a:hover {
+            color: tomato;
+        }
+        
+        .navlink {
+            width: 100%;
+            min-width: 1250px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .link {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+        
+        .linkcenten {
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .linkcenten span {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .linkcenten {
+            width: 120px;
+            border-radius: 10px;
+            height: 70px;
+            background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+            background-size: 400%;
+            animation: jianbian 3s infinite;
+        }
+        
+        @keyframes jianbian {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .link h1 {
+            font-size: 29px;
+            font-weight: 400;
+            color: rgb(255, 0, 0);
+        }
+        
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .search span {
+            margin-top: 2px;
+            margin-right: 5px;
+        }
+        
+        .search span img {
+            border-radius: 50%;
+            background-image: linear-gradient(-225deg, #000000 0%, #EACCF8 48%, #6654F1 100%);
+            background-size: 400%;
+            animation: jianbian 3s infinite;
+        }
+        
+        .search img {
+            width: 30px;
+            height: 30px;
+            margin-top: 4px
+        }
+        
+        .search input {
+            width: 170px;
+            height: 30px;
+            border: 0.1px solid black;
+            border-radius: 4px;
+            background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+        }
+        
+        .search ::placeholder {
+            font-size: 15px;
+        }
+        
+        .link2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 15%;
+            margin: 10px 0 10px 125px;
+        }
+        
+        .link2 a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .link2 a.active,
+        .link2 a:hover {
+            border: 0.5px solid tomato;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            color: tomato;
+        }
+        
+        .video1 {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 40px;
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .video1 video {
+            width: 100%;
+            border: 20px solid black;
+            outline: none;
+        }
+        
+        .video1 span {
+            color: white;
+        }
+        
+        .footer {
+            min-width: 1200px;
+            margin-top: 30px;
+            width: 100%;
+            height: 370px;
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .footertop {
+            display: flex;
+            justify-content: space-between;
+            height: 240px;
+            border-bottom: 2px solid rgb(125, 125, 125);
+        }
+        
+        .footertop1 {
+            width: 1000px;
+            height: 340px;
+            margin-left: 80px;
+        }
+        
+        .info {
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            margin-top: 20px;
+            align-items: center;
+        }
+        
+        .info .t1 {
+            font-weight: 450;
+            color: rgb(103, 103, 103);
+        }
+        
+        .info a {
+            margin-left: 20px;
+            font-weight: 400;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footertop2 {
+            width: 900px;
+            font-size: 12px;
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        
+        .info2 {
+            color: rgb(103, 103, 103);
+            width: 200px;
+            margin: 20px 20px 30px 50px;
+        }
+        
+        .info2 img {
+            margin-top: 15px;
+        }
+        
+        .info3 {
+            color: rgb(103, 103, 103);
+            margin: 20px 80px 0 0;
+        }
+        
+        .info3 img {
+            margin-top: 15px;
+        }
+        
+        .footerbottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 210px;
+            justify-content: space-around;
+        }
+        
+        .bottom1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            color: rgb(103, 103, 103);
+        }
+        
+        .bottom11 {
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .bottom1 a {
+            transition: 0.6s;
+            color: rgb(103, 103, 103);
+        }
+        
+        .bottom2 {
+            font-size: 13px;
+            color: rgb(103, 103, 103);
+        }
+        
+        .bottom3 {
+            font-size: 13px;
+            color: rgb(103, 103, 103);
+            margin-bottom: 20px;
+        }
+        
+        .bottom1 a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navlink">
+            <div class="link">
+                <div class="linkcenten">
+                    <span><img src="./img/图标.png" width="28px" height="28px"></span>
+                    <h1>MUS♪C</h1>
+                </div>
+            </div>
+            <div class="link">
+                <a href="./index.html"><span class="first">发现音乐</span></a>
+            </div>
+            <div class="link">
+                <a class="active" href="#">&nbsp;M&nbsp;&nbsp;V&nbsp;</a>
+            </div>
+            <div class="link">
+                <a href="#">我的音乐</a>
+            </div>
+            <div class="link">
+                <a href="#">商城</a>
+            </div>
+            <div class="link">
+                <a href="#">音乐人</a>
+            </div>
+            <div class="link">
+                <div class="search">
+                    <span><img src="./img/search.png" width="20px" height="20px"></span>
+                    <input type="text" style=" font-size:14px;" placeholder="音乐/视频/电台/用户">
+                </div>
+            </div>
+            <div class="link">
+                <div class="Login">
+                    <a href="login.html" target="_perent">登录/注册</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="link2">
+        <a href="" class="active"><span>推荐</span></a><a href=""><span>最新</span></a><a href=""><span>最热</span></a>
+    </div>
+    <div class="video1">
+        <video src="./视频/序列 01_1.mp4" controls></video>
+        <span>CS GO 官方宣传动画2020赛季CG动画<b>《战士》震撼人心</b></span>
+        <br>
+        <video src="./视频/48f6115d9cbf8ad0b24f94461881afd1.mp4" poster="./视频/批注 2020-07-27 022554.png" controls></video>
+        <span>英雄联盟2019赛季CG动画<b>《觉醒》前方高能</b></span>
+    </div>
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footertop1">
+                <div class="info">
+                    <div class="t1">关于MUSIC</div>
+                    <div><a href="#">关于我们</a></div>
+                    <div><a href="#">MUSIC招聘</a></div>
+                    <div><a href="#">联系我们</a></div>
+                    <div><a href="#">隐私权政策</a></div>
+                    <div><a href="#">联系客服</a></div>
+                    <div><a href="#">意见反馈</a></div>
+                    <div><a href="#">回旧版</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">入驻MUSIC</div>
+                    <div><a href="#">音乐人</a></div>
+                    <div><a href="#">音乐专栏</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">资料补全&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div><a href="#">添加资料</a></div>
+                    <div><a href="#">大家想要的专辑</a></div>
+                    <div><a href="#">音频上传</a></div>
+                    <div><a href="#">MV上传</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">桌面端&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div><a href="#">PC电脑</a></div>
+                    <div><a href="#">苹果电脑</a></div>
+                </div>
+                <div class="info">
+                    <div class="t1">合作伙伴&nbsp;&nbsp;&nbsp;</div>
+                    <div>
+                        <a href="#"><img src="./img/腾讯.png" width="20px" height="20px">腾讯</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/微软 (1).png" width="20px" height="20px">微软</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/阿里巴巴.png" width="55px" height="25px">&nbsp;阿里巴巴</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/京东.png" width="20px" height="20px">京东</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/苹果.png" width="20px" height="20px">&nbsp;Apple</a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/亚马逊.png" width="40px" height="20px">&nbsp;亚马逊</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footertop2">
+                <div class="info2">
+                    <div class="t2">关注我们</div>
+                    <div>
+                        <a href="#"><img src="./img/微博.png" width="45px" height="45px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/微信.png" width="30px" height="30px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/知乎.png" width="30px" height="30px"></a>
+                    </div>
+                </div>
+                <div class="info3">
+                    <div class="t3">MUSIC音乐App</div>
+                    <div><img src="./img/扫码.png" width="140px" height="140px"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <div class="bottom1">
+                <div class="bottom11">
+                    <a href="#">淘宝网</a> |
+                    <a href="#">天猫</a> |
+                    <a href="#">支付宝</a> |
+                    <a href="#">飞猪</a> |
+                    <a href="#">聚划算</a> |
+                    <a href="#">阿里云</a> |
+                    <a href="#">阿里妈妈</a> |
+                    <a href="#">淘宝网</a> |
+                    <a href="#">1688</a> |
+                    <a href="#">Alios</a> |
+                    <a href="#">阿里通信</a> |
+                    <a href="#">万网</a> |
+                    <a href="#">UC</a> |
+                    <a href="#">阿里游戏</a> |
+                    <a href="#">大麦网</a> |
+                    <a href="#">一淘</a> |
+                    <a href="#">狂野飙车</a> |
+                    <a href="#">Uccrict</a> |
+                    <a href="#">阿里安全</a>
+                </div>
+            </div>
+            <div class="bottom2">
+                <div>© 2007 - 2020 杭州阿里巴巴音乐科技有限公司 版权所有 阿里巴巴旗下公司</div>
+            </div>
+            <div class="bottom3">
+                <div>营业执照 | 网络文化经营许可证 : 浙网文(2019)4999-453号 | 增值电信业务经营许可证 : 浙B2-20110188 | 浙ICP备18050417号-2 | 浙公网安备 33011002012729号</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
